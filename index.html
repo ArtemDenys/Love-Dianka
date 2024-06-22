@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запрошення на побачення</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            animation: backgroundFade 10s infinite alternate;
+        }
+
+        @keyframes backgroundFade {
+            0% { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+            100% { background: linear-gradient(to right, #a1c4fd, #c2e9fb); }
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            max-width: 600px;
+            width: 90%;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .container h1 {
+            color: #333;
+            font-size: 2.5em;
+            font-family: 'Great Vibes', cursive;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            color: #555;
+            margin: 10px 0;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff7f50;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+
+        .heart {
+            color: #ff6347;
+            animation: heartBeat 1.5s infinite;
+        }
+
+        @keyframes heartBeat {
+            0%, 20%, 40%, 60%, 80%, 100% { transform: scale(1); }
+            10%, 30%, 50%, 70%, 90% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Запрошення на прогулянку <span class="heart">❤️</span></h1>
+        <p>Кицюня, вибач що сьогодні не провів з тобою час!</p>
+        <p>Я б хотів б виправитись і запросити тебе на прогулянку. Це буде чудовий час, проведений разом, де ми зможемо покурити кальянчик, зїсти щось смачненьке та насолодитися компанією одне одного.</p>
+        <p>Деталі:</p>
+        <p><strong>Дата:</strong> 23.06</p>
+        <p><strong>Час:</strong> 13:00</p>
+        <p>Буду чекати тебе біля хати!</p>
+        <a href="https://t.me/DM_001_DM" class="button">Всі свої побажання пиши сюди</a>
+    </div>
+</body>
+</html>
